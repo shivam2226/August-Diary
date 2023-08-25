@@ -1,0 +1,196 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+.background-image {
+    /* Set the background image of the person */
+    background-image: url('images/bday.jpg');
+    /* Adjust background styles to cover the entire page */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* Style for the play button */
+#playButton {
+    display: block;
+    margin: -2px auto;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#playButton:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent overlay for content */
+    color: black; /* Text color for content */
+    padding: 10px; /* Adjusted padding for content */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    flex-wrap: wrap; /* Allow cards to wrap to the next row */
+    gap: 20px; /* Add spacing between cards */
+    padding: 10px 20px; /* Adjusted padding for cards */
+}
+
+.card {
+    flex: 0 0 calc(33.3333% - 20px);
+    border: 1px solid #ccc;
+    padding: 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 25px
+    /* Add background colors for each card */
+    
+}
+.card:nth-child(1) {
+    background-color: #FAD02E; /* Card 1 */
+    color: #333333;
+}
+.card:nth-child(1) button{
+    background-color: #E67E22;
+    color: #FFFFFF;
+}
+
+.card:nth-child(2) {
+    background-color: #F06292; /* Card 2 */
+    color: #FFFFFF;
+}
+.card:nth-child(2) button{
+    background-color: #C0392B;
+    color: #ffffff;
+}
+
+.card:nth-child(3) {
+    background-color: #4CAF50; /* Card 3 */
+    color: #FFFFFF;
+}
+.card:nth-child(3) button{
+    background-color:  #2ECC71;
+    color: #ffffff;
+}
+
+.card:nth-child(4) {
+    background-color: #3498DB; /* Card 4 */
+    color: #FFFFFF;
+}
+.card:nth-child(4) .button-container{
+    background-color:  #2980B9;
+    color: #ffffff;
+}
+
+.card:nth-child(5) {
+    background-color: #E74C3C; /* Card 5 */
+    color: #FFFFFF;
+}
+.card:nth-child(5) .button-container{
+    background-color: #C0392B;
+    color: #ffffff;
+}
+
+.card:nth-child(6) {
+    background-color: #9B59B6; /* Card 6 */
+    color: #FFFFFF;
+}
+.card:nth-child(6) .button-container{
+    background-color: #8E44AD;
+    color: #ffffff;
+}
+
+.card:nth-child(7) {
+    background-color: #2ECC71; /* Card 6 */
+    color: #FFFFFF;
+}
+.card:nth-child(7) .button-container{
+    background-color: #27AE60;
+    color: #ffffff;
+}
+
+.card:nth-child(8) {
+    background-color: #FFA726; /* Card 6 */
+    color: #FFFFFF;
+}
+.card:nth-child(8) .button-container{
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+
+.card:hover {
+    transform: scale(1.1) rotate(5deg); /* Increase size and apply rotation on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Rest of your CSS styles for other elements */
+/* Style for the outer button container */
+.button-container {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Style for the anchor tag inside the button */
+  .button-link {
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  /* Hover effect */
+  .button-link:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Active effect */
+  

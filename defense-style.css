@@ -1,0 +1,145 @@
+/* Basic reset */
+/* Reset default margin and padding */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body background and text color */
+body {
+    background-color: #191b28;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Quote section */
+.quotes {
+    background-color: #121522;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.quotes blockquote {
+    font-size: 24px;
+    font-style: italic;
+    margin: 0 auto 20px;
+    max-width: 800px;
+    padding: 10px;
+    border-left: 3px solid #ff5e00;
+}
+
+/* Image gallery */
+.image-gallery {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.image-gallery h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.image-gallery .image {
+    display: inline-block;
+    margin: 10px;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Text content */
+.text-content {
+    background-color: #0e1018;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.text-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Personal message */
+.personal-message {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.personal-message h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.personal-message p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Navigation section */
+/* Add styles for quotes, image gallery, text content, personal message, embedded videos, badge customization, and inspirational message sections */
+
+.navigation {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#pageSelector {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#pageSelector:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+#pageSelector:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3); /* Lighten when focused */
+    border: 1px solid #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+#pageSelector option {
+    background-color: #444;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#pageSelector option:hover {
+    background-color: #333;
+    color: #fff;
+}

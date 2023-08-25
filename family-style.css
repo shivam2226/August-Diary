@@ -1,0 +1,123 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #d72631, #a2d5c6, #077b8a, #5c3c92); /* Gradient background */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-top: 20px;
+}
+
+.photos img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photos img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    margin-top: 20px;
+    padding: 20px 0;
+    background-color: #333;
+}
+
+.audio {
+    display: none;
+}
+
+button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+#pageSelector {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#pageSelector:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+#pageSelector:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3); /* Lighten when focused */
+    border: 1px solid #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+#pageSelector option {
+    background-color: #444;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#pageSelector option:hover {
+    background-color: #333;
+    color: #fff;
+}
+.alert-text {
+    color: #FF5733;
+    font-size: 16px;
+    font-weight: bold;
+  }
+

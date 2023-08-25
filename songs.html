@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personalized Playlist</title>
+    <link rel="stylesheet" type="text/css" href="playlist-style.css">
+</head>
+<body>
+    <div class="playlist">
+        <h2>YOUR PERSONALIZED PLAYLIST</h2>
+        <div class="playlist-items">
+            <div class="playlist-item">
+                <img src="images/perf.jpg" alt="Song 1">
+                <h3>PERFECT</h3>
+                <button class="play-button">Play</button>
+            </div>
+            
+            <div class="playlist-item">
+                <img src="images/khamo.jpg" alt="Song 2">
+                <h3>KHAMOSHIYA</h3>
+                <button class="play-button">Play</button>
+            </div>
+
+            <div class="playlist-item">
+              <img src="images/gazab.jpg" alt="Song 2">
+              <h3>GAZAB KA HAI DIN</h3>
+              <button class="play-button">Play</button>
+            </div>
+
+            <div class="playlist-item">
+            <img src="images/until.jpg" alt="Song 2">
+            <h3>UNTIL I FOUND YOU</h3>
+            <button class="play-button">Play</button>
+            </div>
+
+        <div class="playlist-item">
+          <img src="images/kaun.jpg" alt="Song 2">
+          <h3>KAUN TUJHE</h3>
+          <button class="play-button">Play</button>
+        </div>
+
+        <div class="playlist-item">
+        <img src="images/tera.jpg" alt="Song 2">
+        <h3>TERA HONE LAGA HOON</h3>
+        <button class="play-button">Play</button>
+    </div>
+
+    <div class="playlist-item">
+      <img src="images/dekha.jpg" alt="Song 2">
+      <h3>DEKHA HAZARO DAFA</h3>
+      <button class="play-button">Play</button>
+  </div>
+
+  <div class="playlist-item">
+    <img src="images/i like.jpg" alt="Song 2">
+    <h3>I LIKE YOU SO MUCH , YOU'LL KNOW IT</h3>
+    <button class="play-button">Play</button>
+</div>
+
+<div class="playlist-item">
+  <img src="images/what.jpeg" alt="Song 2">
+  <h3>WHAT MAKES YOU BEAUTIFUL</h3>
+  <button class="play-button">Play</button>
+</div>
+            
+            <!-- Add more playlist items as needed -->
+        </div>
+        
+        <audio id="audioPlayer" controls></audio>
+    </div>
+
+    <div class="navigation">
+      <select id="pageSelector" onchange="navigate()">
+          <option value="" disabled selected>Select a Page</option>
+          <option value="index.html">Home</option>
+          <option value="family.html">Family Time</option>
+          <option value="defense.html">Vision</option>
+          <option value="cute.html">Cute Photos</option>
+          <option value="traditional.html">Traditional Photos</option>
+          <option value="modern.html">Modern Photos</option>
+          <option value="videos.html">Videos</option>
+          <option value="random.html">Random Photos</option>
+          <option value="songs.html">Playlist</option>
+
+      </select>
+  </div>
+    
+    <script src="playlist.js"></script>
+</body>
+</html>

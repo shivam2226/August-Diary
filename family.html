@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Family Photos</title>
+    <link rel="stylesheet" type="text/css" href="family-style.css">
+</head>
+<body>
+    <div class="background-image">
+        <div class="content">
+            <header>
+                <h1 style="text-decoration: underline; color: blanchedalmond;">A CUTE FAMILY</h1>
+            </header>
+            <div class="photos">
+                <img src="images/family1.jpg" alt="Family Photo 1">
+                <img src="images/family2.jpg" alt="Family Photo 2">
+                <img src="images/family3.jpg" alt="Family Photo 3">
+                <img src="images/family4.jpg" alt="Family Photo 4">
+                <img src="images/family5.jpg" alt="Family Photo 5">
+                <img src="images/family6.jpg" alt="Family Photo 6">
+            </div>
+            <footer>
+                <p style="color:whitesmoke; font-size: 1.2rem; margin-bottom: 10px;">Select which song to be played on this page</p>
+                <audio id="audio1" class="audio" loop>
+                    <source src="songs/family-bg.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio2" class="audio">
+                    <source src="audio2.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio3" class="audio">
+                    <source src="audio3.mp3" type="audio/mpeg">
+                </audio>
+                <button id="playButton" onclick="playAudio('audio1'); showStyledAlert();">Play Audio 1</button>
+                <button onclick="playAudio('audio2')">Play Audio 2</button>
+                <button onclick="playAudio('audio3')">Play Audio 3</button>
+                <div class="navigation">
+                    <select id="pageSelector" onchange="navigate()">
+                        <option value="" disabled selected>Select a Page</option>
+                        <option value="index.html">Home</option>
+                        <option value="family.html">Family Time</option>
+                        <option value="defense.html">Vision</option>
+                        <option value="cute.html">Cute Photos</option>
+                        <option value="traditional.html">Traditional Photos</option>
+                        <option value="modern.html">Modern Photos</option>
+                        <option value="videos.html">Videos</option>
+                        <option value="random.html">Random Photos</option>
+                        <option value="songs.html">Playlist</option>
+
+                    </select>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
